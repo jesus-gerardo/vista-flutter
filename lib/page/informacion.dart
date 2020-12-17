@@ -6,10 +6,14 @@ class Informacion extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Información'),
+        title: Text('Page 1'),
       ),
       body: ListView(
-        children: <Widget>[card()],
+        children: <Widget>[
+          card(),
+          card(),
+          card(),
+        ],
       ),
     );
   }
