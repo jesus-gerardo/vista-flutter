@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:profile_template/page/informacion.dart';
 import 'package:profile_template/page/page_2.dart';
 import 'package:profile_template/page/page_3.dart';
+import 'package:profile_template/page/page_4.dart';
 
 class SideBarMenu extends StatelessWidget {
   @override
@@ -50,6 +51,14 @@ class SideBarMenu extends StatelessWidget {
             onTap: () => {
               Navigator.of(context)
                   .push(MaterialPageRoute(builder: (context) => Page3()))
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.pages),
+            title: Text('Pagina 4'),
+            onTap: () => {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => Page4()))
             },
           ),
         ],
